@@ -27,9 +27,11 @@
 
 以下为推荐配置，实际需求请根据业务场景调整：
 
-- 96G x4 GPU：支持 40 万 token 的总上下文。
+- **96G x4 GPU**：总 KV Cache 容量支持 40 万 token。
 
-- 144G x8 GPU：支持长达 300 万 token 的总上下文。
+- **144G x8 GPU**：总 KV Cache 容量支持高达 300 万 token。
+
+> **注**：以上数值为硬件支持的最大并发缓存总量，模型单序列（Single Sequence）长度上限仍为 196k。
 
 ## 使用 Python 部署
 
