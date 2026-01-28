@@ -27,9 +27,11 @@ The deployment process is illustrated below using MiniMax-M2.1 as an example.
 
 The following are recommended configurations; actual requirements should be adjusted based on your use case:
 
-- 4x 96GB GPUs: Supported context length of up to 400K tokens.
+- **96G x4** GPU: Supports a total KV Cache capacity of 400K tokens.
 
-- 8x 144GB GPUs: Supported context length of up to 3M tokens.
+- **144G x8** GPU: Supports a total KV Cache capacity of up to 3M tokens.
+
+> **Note**: The values above represent the total aggregate hardware KV Cache capacity. The maximum context length per individual sequence remains **196K** tokens.
 
 ## Deployment with Python
 
